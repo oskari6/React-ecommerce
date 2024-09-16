@@ -3,7 +3,7 @@ import mongoose from "mongoose"; //mongodb
 import Customer from "./models/customer";
 import cors from "cors";
 import { config as dotenvConfig } from "dotenv";
-
+/**/
 dotenvConfig(); // Load .env variables
 const app = express();
 

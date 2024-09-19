@@ -9,3 +9,14 @@ html {
   color: #59636e;
   box-sizing: border-box;
 }
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+}

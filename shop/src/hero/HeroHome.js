@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
 export default function HeroHome() {
+  const googleMapsApi = process.env.REACT_APP_GOOGLE_MAPS;
   useEffect(() => {
     const script = document.createElement("script");
-    script.src =
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyB33WIPVng8Zx1LEVfxupa1m4YZjCBuBUg&callback=initMap";
+    script.src = googleMapsApi;
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
@@ -55,7 +55,7 @@ export default function HeroHome() {
         <div className="h-full w-full">
           <img
             className="h-full w-full contain max-h-[750px]"
-            lt="shoe-1"
+            alt="shoe-1"
             src="/images/shoe-1.jpg"
           />
         </div>

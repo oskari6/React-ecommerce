@@ -1,6 +1,32 @@
 import { useEffect } from "react";
 
+import { useEffect } from "react";
+
 export default function HeroHome() {
+  const googleMapsApi = process.env.REACT_APP_GOOGLE_MAPS;
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = googleMapsApi;
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    window.initMap = () => {
+      const map = new window.google.maps.Map(document.getElementById("map"), {
+        center: { lat: 33.76440487088586, lng: -118.19443134286496 },
+        zoom: 12,
+      });
+
+      new window.google.maps.Marker({
+        position: { lat: 33.76440487088586, lng: -118.19443134286496 },
+        map: map,
+      });
+    };
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const googleMapsApi = process.env.REACT_APP_GOOGLE_MAPS;
   useEffect(() => {
     const script = document.createElement("script");

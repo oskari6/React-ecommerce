@@ -163,7 +163,7 @@ export default function HeroHome() {
       <div className="h-[100px] bg-[white] pb-4 min-h-200 border-b border-gray-300 w-2/3 mx-auto my-4"></div>
       <div className="w-full h-full flex flex-col items-center justify-center pt-10">
         <h3>Business location</h3>
-        <div className="p-5 text-center flex gap-2 flex-col">
+        <div className="p-10 text-center flex gap-2 flex-col">
           <div className="flex items-center justify-center">
             <p className="font-bold">address:&nbsp;</p>{" "}
             <p>71 Aquarium Way, Long Beach, CA, USA</p>
@@ -184,8 +184,8 @@ export default function HeroHome() {
       </div>
       <div className="h-[100px] bg-[white] pb-4 min-h-200 border-b border-gray-300 w-2/3 mx-auto my-4"></div>
       <div className="pt-10 flex justify-center items-center flex-col">
-        <h3 className="pb-10">About us</h3>
-        <p className="w-[500px] text-center leading-[1.8]">
+        <h3 className="">About us</h3>
+        <p className="w-[500px] text-center leading-[1.8] p-10">
           California Shoe Co. is a leading footwear company based in California,
           specializing in crafting stylish, high-quality shoes for men, women,
           and children. With a strong focus on comfort and durability, they use
@@ -198,7 +198,6 @@ export default function HeroHome() {
           service and setting trends in the footwear industry.
         </p>
       </div>
-      <div className="h-[100px] bg-[white] pb-4 min-h-200 border-b border-gray-300 w-2/3 mx-auto my-4"></div>
     </>
   );
 }

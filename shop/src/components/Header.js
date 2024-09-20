@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <div className="pb-4 min-h-200 border-b border-gray-300 w-1/2 mx-auto my-4 text-[3rem] text-center">
-        👜
+        <a href="/">👜</a>
       </div>
 
       <div className=" min-h-[80px] bg-gray-100 flex justify-center items-center">
